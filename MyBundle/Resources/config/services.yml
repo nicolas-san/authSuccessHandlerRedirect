@@ -1,0 +1,4 @@
+services:
+    my_bundle.success.login.handler:
+        class: MyBundle\Handler\LoginSuccessHandler
+        arguments: [@router]
