@@ -10,7 +10,7 @@ use Symfony\Component\Security\Http\Authentication\AuthenticationSuccessHandlerI
 
 /**
  * @author: Bouteillier Nicolas <http://www.kaizendo.fr>
- * @licence MIT
+ * @license MIT
  */
 
 class LoginSuccessHandler implements AuthenticationSuccessHandlerInterface
