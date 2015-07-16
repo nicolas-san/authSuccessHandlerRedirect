@@ -9,6 +9,7 @@ If you want to redirect your user after login on route based on thiers roles, yo
 3. Declare the service in you Resources/services.yml (or xml if you want)
     ```
     services:
+    
         my_bundle.success.login.handler:
             class: MyBundle\Handler\LoginSuccessHandler
             arguments: [@router]
