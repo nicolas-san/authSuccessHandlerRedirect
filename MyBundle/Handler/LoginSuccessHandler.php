@@ -1,4 +1,5 @@
 <?php
+
 namespace MyBundle\Handler;
 
 use Symfony\Component\HttpFoundation\RedirectResponse;
@@ -10,14 +11,15 @@ use Symfony\Component\Security\Http\Authentication\AuthenticationSuccessHandlerI
 
 /**
  * @author: Bouteillier Nicolas <http://www.kaizendo.fr>
+ *
  * @license MIT
  */
-
 class LoginSuccessHandler implements AuthenticationSuccessHandlerInterface
 {
     private $router;
 
-    function __construct(RouterInterface $router) {
+    public function __construct(RouterInterface $router)
+    {
         $this->router = $router;
     }
 
@@ -26,7 +28,7 @@ class LoginSuccessHandler implements AuthenticationSuccessHandlerInterface
      * is called by authentication listeners inheriting from
      * AbstractAuthenticationListener.
      *
-     * @param Request $request
+     * @param Request        $request
      * @param TokenInterface $token
      *
      * @return Response never null
